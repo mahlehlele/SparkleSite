@@ -1,0 +1,49 @@
+<main class="site-main">
+    <section class="page-header">
+        <div class="container">
+            <h1>Enquiry / Booking</h1>
+            <p>Tell us what you need and we will confirm availability.</p>
+        </div>
+    </section>
+
+    <section class="form-wrap container">
+        <form id="enquiryForm" novalidate>
+            <div class="form-grid">
+                <div class="field">
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="e.g. Tshegofatso Ditsebe" required />
+                    <small class="error" id="err-name"></small>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                        <small class="error" id="err-email"></small>
+                        </div>
+                        <div class="field">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option>Domestic Cleaning</option>
+                                <option>Office Cleaning</option>
+                                <option>Carpet & Upholstery</option>
+                                <option>Post-Construction</option>
+
+                                </select>
+                                <small class="error" id="err-service"></small>
+                                </div>
+                                <div class="field">
+                                    <label for="date">Preferred Date</label>
+                                    <input id="date" name="date" type="date" required />
+                                    <small class="error" id="err-date"></small>
+                                    </div>
+                                    <div class="field field-full">
+                                        <label for="message">Message</label>
+
+                                        <textarea id="message" name="message" rows="5" placeholder="Any specifics about the space, size, or timing?"></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="btn cta" type="submit">Submit Enquiry</button>
+                                    <p  class="form-note">We will respond within one business day.</p>
+                                </form>
+                            </section>
+                        </main>
