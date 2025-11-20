@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Services | Sparkle Cleaning Solutions</title>
+    <meta name="description"
+          content="View all services from Sparkle Cleaning Solutions, including home cleaning, office cleaning and deep cleaning packages across Pretoria.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-content">
+        <div class="logo">
+            <span class="logo-highlight">Sparkle</span> Cleaning Solutions
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero hero-small">
+        <div class="container">
+            <h1>Cleaning Services &amp; Packages</h1>
+            <p>Flexible options for homes, offices and special deep cleans.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+
+            <!-- Search bar -->
+             <div class="center-text" style="margin-bottom: 1.5rem;">
+                <label for="serviceSearch" class="visually-hidden">Search services</label>
+                <input type="text" id="serviceSearch" placeholder="Search services (e.g. home, office, deep clean)">
+            </div>
+
+            <div class="cards-grid services-grid">
+                <artcle class="card service-card"
+                        data-service="home cleaning weekly deep residential">
+                    <img src="images/service-home.jpg" alt="Home cleaning service"
+                         class="responsive-image lightbox-item">
+                        <h2>Home Cleaning</h2>
+                        <p>Weekly, fortnightly or once-off cleaning for houses, flats, and residences.</p>
+                        <ul class="list">
+                            <li>Dusting and wiping surfaces</li>
+                            <li>Vacuuming and mooping floors</li>
+                            <li>Bathroom and kitchen cleaning</li>
+                        </ul>
+                        <p class="price">From R200 per visit</p>
+                    </artcle>
+
+                    <artcle class="card service-card"
+                            data-service="office commercial cleaning workplace business">
+                        <img src="images/service-office.jpg" alt="Office cleaning service"
+                             class="responsive-image lightbox-item">
+                             <h2>Office &amp; Commercial Cleaning</h2>
+                             <p>After-hours cleaning to keep your workplace professional and hygienic.</p>
+                             <ul class="list">
+                                <li>Desk and workstation cleaning</li>
+                                <li>Boardroom and reception areas</li>
+                                <li>Waste removal and sanitising</li>
+                            </ul>
+                            <p class="price">Custom monthly packages</p>
+                        </artcle>
+
+                        <article class="card services-card"
+                                 data-service="deep cleaning move out intensive end of lease">
+                            <img src="images/service-deepclean.jpg" alt="Deep cleaning and move-out service"
+                                 class="responsive-image lightbox-item">
+                            <h2>Deep cleaning &amp; Move-out</h2>
+                            <p>Intensive cleaning services for end-of-lease or special occasions.</p>
+                            <ul class="list">
+                                <li>Oven and stove deep clean</li>
+                                <li>Grout, tiles amd window frames</li>
+                                <li>Cupboards and built-in-units</li>
+                            </ul>
+                            <p class="price">From R900 per service</p>
+                        </article>
+                    </div>
+
+                    <div class="container center-text" style="margin-top: 2rem;">
+                        <a href="enquiry.html" class="btn btn-primary">Request a Custom Quote</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dynamic Specials loaded by JS -->
+            <section class="section section-alt">
+                <div class="container">
+                    <h2 class="section-title">Current Specials</h2>
+                    <div id="specialOffers" class="cards-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <p>&copy; 2025 Sparkle Cleaning Solutions. All rights reserved.</p>
+                <p>Tel: 010 354 9867. Email: book@sparklesolutions.co.za</p>
+            </div>
+        </footer>
+
+        <!-- Lightbox for images -->
+         <div class="modal-overlay" id="lightbox" aria-hidden="true">
+            <div class="modal modal-lightbox">
+                <button class="modal-close" id="closeLightbox">&times;</button>
+                <img src="" alt="Service preview" id="lightboxImage">
+            </div>
+        </div>
+        </body>
+        </html>

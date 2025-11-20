@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sparkle Cleaning Solutions</title>
+    <meta name="description"
+          content="Contact Sparkle Cleaning Solutions by phone, email, Whatsapp or using the contact form to ask questions or request information.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-content">
+        <div class="logo">
+            <span class="logo-highlight">Sparkle</span> Cleaning Solutions
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero hero-image">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch to book a service or ask a question.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container two-column contact-grid">
+            <div>
+                <h2>Contact Details</h2>
+                <p>strong>Phone:</strong> 010 354 9867</p>
+                <p>strong>Email:</strong> book@sparklesolutions.co.za</p>
+                <p>strong>Whatsapp:</strong> 071 056 2088</p>
+                <p>strong>Business Hours:</strong> Mon-Sun, 07:00-16:00</p>
+
+                <h3>Locations Served</h3>
+                <p>Pretoria CBD, Hatfield, Arcadia, Sunnyside and surrounding suburbs.</p>
+
+                <h3>Send Us a Message</h3>
+                <form class="form" id="contactForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="contactName">Full Name</label>
+                        <input type="text" id="contactName" name="ContactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="messageType">Type of Message</label>
+                        <select id="messageType" name="messageType"required>
+                            <option value="">Select an option</option>
+                            <option value="question">General Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="compliment">Complimnet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="5" minlength="10" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="contactMessageBox" class="form-message"></div>
+            </div>
+
+            <div>
+                <h2>Find Us</h2>
+                <div class="map-placeholder" id="mapArea">
+                    <p>Map Placeholder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <p>&copy; 2025 Sparkle Cleaning Solutions. All rights reserved.</p>
+        <p>Tel: 010 354 9867. Email: book@sparklesolutions.co.za</p>
+    </div>
+</footer>
+</body>
+</html>

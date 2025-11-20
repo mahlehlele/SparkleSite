@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Request a Cleaning Quote | Sparkle Cleaning Solutions</title>
+    <meta name="description"
+          content="Use the Sparkle Cleaning Solutions enquiry form to request a customised quote for your home or office cleaning.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-content">
+        <div class="logo">
+            <span class="logo-highlight">Sparkle</span> Cleaning Solutions
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html" class="active">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero hero-small">
+        <div class="container">
+            <h1>Request a Cleaning Quote</h1>
+            <p>Fill in the form below and we'll respond with a personalised quotation.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container form-container">
+            <form class="form" id="enquiryForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceType">Service Type</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="">Select a service</option>
+                        <option value="home">Home Cleaning</option>
+                        <option value="office">Office Cleaning</option>
+                        <option value="deep">Deep Cleaning / Move-out</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Tell us about your space and any special request"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+            </form>
+
+            <div id="enquiryMessage" class="form-message"></div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <p>&copy; 2025 Sparkle Cleaning Solutions. All rights reserved.</p>
+        <p>Tel: 010 354 9867 . Email: book@sparklesolutions.co.za</p>
+    </div>
+</footer>
+</body>
+</html>
